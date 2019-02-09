@@ -5,11 +5,33 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-compatible" content="IE=edge">
     <title>Book-A-Meal | Order Details</title>
+    <link rel="shortcut icon" href="./../img/favicon.ico">
     <link rel="stylesheet" href="./../css/style.css">
     <link rel="stylesheet" href="./../fonts/font-awesome/css/font-awesome.min.css">
 </head>
 
 <body>
+<nav>
+    <div class="nav-header">
+        <img class="nav-logo" src="./../img/logo2.png" alt="Logo">
+        <a href="./../user/login.html" class="button button-transparent login-button">Logout, User <i class="fa fa-lock shift-left"></i></a>
+    </div>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner horizontal"></div>
+        <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+        <ul class="sidebarMenuInner">
+            <li><a href="./../index.html">Home</a></li>
+            <li>Admin <span>Manage Food Menu</span></li>
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="./meal-option.html">Meal Options</a></li>
+            <li><a href="./order-summary.html">Order Summary</a></li>
+        </ul>
+    </div>
+</nav>
 
     <div class="wrapper-fluid">
         <div class="new-line">
@@ -35,9 +57,12 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
+
+<footer>
+    <p>Copyright &copy; 2019, Book-A-Meal. All rights reserved.</p>
+</footer>
 </body>
 
 <script type="text/javascript" src="./../js/custom.js"></script>
