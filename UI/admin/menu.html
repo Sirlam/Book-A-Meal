@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <title>Book-A-Meal | Menu</title>
+    <link rel="shortcut icon" href="./../img/favicon.ico">
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="./../fonts/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+<nav>
+    <div class="nav-header">
+        <img class="nav-logo" src="./../img/logo2.png" alt="Logo">
+        <a href="./../user/login.html" class="button button-transparent login-button">Logout, User <i class="fa fa-lock shift-left"></i></a>
+    </div>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner horizontal"></div>
+        <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+        <ul class="sidebarMenuInner">
+            <li><a href="./../index.html">Home</a></li>
+            <li>Admin <span>Manage Food Menu</span></li>
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="./meal-option.html">Meal Options</a></li>
+            <li><a href="./order-summary.html">Order Summary</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <div class="wrapper-fluid">
+        <div class="new-line">
+            <div class="content-100">
+                <div class="card">
+                    <div class="container">
+                        <form role="form">
+                            <div class="new-line">
+                                <div class="content-30">
+                                    <label for="type">Meal Options: </label>
+                                    <select id="type" name="type" class="select-input" multiple>
+                                        <option disabled>Meal Option 1</option>
+                                        <option>Rice</option>
+                                        <option>Yam</option>
+                                        <option>Plantain</option>
+                                        <option disabled>Meal Option 2</option>
+                                        <option>Pork</option>
+                                        <option>Hotdogs</option>
+                                        <option>Cakes</option>
+                                        <option disabled>Meal Option 3</option>
+                                        <option>Eggs</option>
+                                        <option disabled>Meal Option 4</option>
+                                        <option>Fish</option>
+                                        <option>Beef</option>
+                                    </select>
+                                </div>
+
+                                <div class="content-30">
+                                    <label for="name">Name of menu: </label>
+                                    <input class="text-input" type="text" id="name" name="name" placeholder="Name of menu">
+                                </div>
+
+                                <div class="content-30">
+                                    <label for="image">Image(optional): </label>
+                                    <input class="text-input" type="file" id="image" name="image">
+                                </div>
+                            </div>
+
+                            <div class="new-line">
+                                <div class="content-30">
+                                    <label for="date">Date: </label>
+                                    <input class="text-input" type="date" id="date" name="date">
+                                </div>
+                            </div>
+
+                            <div class="content-100">
+                                    <button type="submit" class="button button-orange center">Add <i class="fa fa-plus shift-left"></i></button>
+                                </div>
+
+                            <div class="new-line">
+                                <table>
+                                    <thead>
+                                        <th>#</th>
+                                        <th>Date</th>
+                                        <th>Menu</th>
+                                        <th>Name</th>
+                                        <th>Total Cost</th>
+                                        <th>Edit</th>
+                                        <th>Remove</th>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td><img class="table-img" src="./../img/menu/burger.jpeg"></td>
+                                            <td>9-02-2019</td>
+                                            <td>Yam, Pork</td>
+                                            <td>Delight</td>
+                                            <td>$25.00</td>
+                                            <td><button type="button" class="button button-orange"><i class="fa fa-pencil"></i></button></td>
+                                            <td><button type="button" class="button button-black"><i class="fa fa-close"></i></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><img class="table-img" src="./../img/menu/cake.jpg"></td>
+                                            <td>8-02-2019</td>
+                                            <td>Yam, Eggs, Beef</td>
+                                            <td>Appetiers</td>
+                                            <td>$35.00</td>
+                                            <td><button type="button" class="button button-orange"><i class="fa fa-pencil"></i></button></td>
+                                            <td><button type="button" class="button button-black"><i class="fa fa-close"></i></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><img class="table-img" src="./../img/menu/noodles.jpg"></td>
+                                            <td>7-02-2019</td>
+                                            <td>Cake, Hotdogs</td>
+                                            <td>Dessert</td>
+                                            <td>$15.00</td>
+                                            <td><button type="button" class="button button-orange"><i class="fa fa-pencil"></i></button></td>
+                                            <td><button type="button" class="button button-black"><i class="fa fa-close"></i></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><img class="table-img" src="./../img/menu/burger.jpeg"></td>
+                                            <td>6-02-2019</td>
+                                            <td>Rice, Salad, Beef</td>
+                                            <td>Something</td>
+                                            <td>$85.00</td>
+                                            <td><button type="button" class="button button-orange"><i class="fa fa-pencil"></i></button></td>
+                                            <td><button type="button" class="button button-black"><i class="fa fa-close"></i></button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+<footer>
+    <p>Copyright &copy; 2019, Book-A-Meal. All rights reserved.</p>
+</footer>
+</body>
+
+<script type="text/javascript" src="./../js/custom.js"></script>
+
+</html>

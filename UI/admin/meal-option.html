@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <title>Book-A-Meal | Meal Options</title>
+    <link rel="shortcut icon" href="./../img/favicon.ico">
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="./../fonts/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+<nav>
+    <div class="nav-header">
+        <img class="nav-logo" src="./../img/logo2.png" alt="Logo">
+        <a href="./../user/login.html" class="button button-transparent login-button">Logout, User <i class="fa fa-lock shift-left"></i></a>
+    </div>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner horizontal"></div>
+        <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+        <ul class="sidebarMenuInner">
+            <li><a href="./../index.html">Home</a></li>
+            <li>Admin <span>Manage Food Menu</span></li>
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="./meal-option.html">Meal Options</a></li>
+            <li><a href="./order-summary.html">Order Summary</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <div class="wrapper-fluid">
+        <div class="new-line">
+            <div class="content-100">
+                <div class="card">
+                    <div class="container">
+                        <form role="form">
+                            <div class="new-line">
+                                <div class="content-30">
+                                    <label for="type">Meal Type: </label>
+                                    <select id="type" name="type" class="select-input">
+                                        <option>Meal Option 1</option>
+                                        <option>Meal Option 2</option>
+                                        <option>Meal Option 3</option>
+                                        <option>Meal Option 4</option>
+                                    </select>
+                                </div>
+
+                                <div class="content-30">
+                                    <label for="name">Name of dish: </label>
+                                    <input class="text-input" type="text" id="name" name="name" placeholder="Name of dish">
+                                </div>
+
+                                <div class="content-30">
+                                    <label for="amount">Cost: </label>
+                                    <input class="text-input" type="number" id="amount" name="amount">
+                                </div>
+                            </div>
+
+                            <div class="content-100">
+                                <button type="submit" class="button button-orange center">Add <i class="fa fa-plus shift-left"></i></button>
+                            </div>
+
+                            <div class="new-line">
+                                <table>
+                                    <thead>
+                                        <th>#</th>
+                                        <th>Meal Type</th>
+                                        <th>Name</th>
+                                        <th>Cost</th>
+                                        <th>Edit</th>
+                                        <th>Remove</th>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Meal Option 1</td>
+                                            <td>Rice</td>
+                                            <td>$5.00</td>
+                                            <td><button type="button" class="button button-orange"><i class="fa fa-pencil"></i></button></td>
+                                            <td><button type="button" class="button button-black"><i class="fa fa-close"></i></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Meal Option 1</td>
+                                            <td>Rice</td>
+                                            <td>$5.00</td>
+                                            <td><button type="button" class="button button-orange"><i class="fa fa-pencil"></i></button></td>
+                                            <td><button type="button" class="button button-black"><i class="fa fa-close"></i></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Meal Option 1</td>
+                                            <td>Rice</td>
+                                            <td>$5.00</td>
+                                            <td><button type="button" class="button button-orange"><i class="fa fa-pencil"></i></button></td>
+                                            <td><button type="button" class="button button-black"><i class="fa fa-close"></i></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Meal Option 1</td>
+                                            <td>Rice</td>
+                                            <td>$5.00</td>
+                                            <td><button type="button" class="button button-orange"><i class="fa fa-pencil"></i></button></td>
+                                            <td><button type="button" class="button button-black"><i class="fa fa-close"></i></button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+<footer>
+    <p>Copyright &copy; 2019, Book-A-Meal. All rights reserved.</p>
+</footer>
+</body>
+
+<script type="text/javascript" src="./../js/custom.js"></script>
+
+</html>
